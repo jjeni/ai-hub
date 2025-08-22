@@ -7,39 +7,39 @@ import Navbar from "@/components/Navbar";
 const Index = () => {
   const projects = [
     {
-      title: "AI Music",
+      title: "Music",
       description: "Generate and compose music using artificial intelligence",
       path: "/music",
       icon: <Music className="w-8 h-8 text-white" />,
-      contributors: ["Alice", "Bob", "Charlie"]
+      contributors: ["Jeni", "Karthik", "Rishaban","Bhuvaneshwaran", "Chiranjeevi","Thamilavan", "Harish"]
     },
     {
-      title: "AI Code", 
+      title: "Code", 
       description: "Intelligent code generation and programming assistance",
       path: "/code",
       icon: <Code className="w-8 h-8 text-white" />,
-      contributors: ["David", "Eva", "Frank"]
+      contributors: ["Kohila", "Vijaya Priya", "Haritha Tharini", "Sai Vikas", "Venkata Srinu", "Rajasekaran"]
     },
     {
-      title: "AI Text",
+      title: "Text",
       description: "Advanced text generation and natural language processing",
       path: "/text", 
       icon: <FileText className="w-8 h-8 text-white" />,
-      contributors: ["Grace", "Henry", "Ivy"]
+      contributors: ["Vishwa","KalaiSelvan", "Tamilselvan", "Vishnu","Kirubakaran","Hassan Riyas"]
     },
     {
-      title: "AI Video",
+      title: "Video",
       description: "Create and edit videos with artificial intelligence",
       path: "/video",
       icon: <Video className="w-8 h-8 text-white" />,
-      contributors: ["Jack", "Kate", "Liam"]
+      contributors: ["Sanjay", "Esakkiraj", "Muthuselvam", "Balakrishnan", "Hariram", "Venkatesh", "Yokesh"]
     },
     {
-      title: "AI Image", 
+      title: "Image", 
       description: "Generate and manipulate images using AI technology",
       path: "/image",
       icon: <Image className="w-8 h-8 text-white" />,
-      contributors: ["Mia", "Noah", "Olivia"]
+      contributors: ["Karthika", "Kaviya", "Supriya", "Badma Sri", "Tamil Selvi", "Pankaj Kumar Jena", "Pathan Mohammed khan"]
     }
   ];
 
