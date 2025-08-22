@@ -7,11 +7,11 @@ const Navbar = () => {
   
   const navItems = [
     { label: "Home", path: "/" },
-    { label: "AI Music", path: "/music" },
-    { label: "AI Code", path: "/code" },
-    { label: "AI Text", path: "/text" },
-    { label: "AI Video", path: "/video" },
-    { label: "AI Image", path: "/image" },
+    { label: "Music", path: "/music" },
+    { label: "Code", path: "/code" },
+    { label: "Text", path: "/text" },
+    { label: "Video", path: "/video" },
+    { label: "Image", path: "/image" },
     { label: "AI Hub", path: "/hub" },
   ];
 
@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors">
             <Sparkles className="h-8 w-8 text-primary animate-pulse" />
             <span className="font-bold text-xl bg-gradient-primary bg-clip-text text-transparent">
-              AI Portal
+              AI HUB
             </span>
           </Link>
           

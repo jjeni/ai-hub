@@ -4,7 +4,7 @@ import { ContributorAvatars } from "@/components/ContributorAvatars";
 import Navbar from "@/components/Navbar";
 
 const MusicPage = () => {
-  const contributors = ["Alice Johnson", "Bob Smith", "Charlie Davis"];
+  const contributors = ["Jeni", "Karthik", "Rishaban","Bhuvaneshwaran", "Chiranjeevi","Thamilavan", "Harish"];
   
   return (
     <div className="min-h-screen bg-background">
@@ -27,7 +27,7 @@ const MusicPage = () => {
 
           {/* Contributors */}
           <div className="glass-dark rounded-xl p-6 mb-8 border border-white/20">
-            <h2 className="text-xl font-semibold text-foreground mb-4">Project Contributors</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-4">Contributors</h2>
             <ContributorAvatars contributors={contributors} />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
               {contributors.map((contributor, index) => (
@@ -37,7 +37,7 @@ const MusicPage = () => {
                   </div>
                   <p className="text-sm font-medium text-foreground">{contributor}</p>
                   <p className="text-xs text-muted-foreground">
-                    {index === 0 ? "Lead Developer" : index === 1 ? "ML Engineer" : "Audio Specialist"}
+                    {"Developer"}
                   </p>
                 </div>
               ))}
