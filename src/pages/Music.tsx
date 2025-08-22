@@ -24,25 +24,7 @@ const MusicPage = () => {
               Create beautiful, original music using artificial intelligence. From classical compositions to modern beats.
             </p>
           </div>
-
-          {/* Contributors */}
-          <div className="glass-dark rounded-xl p-6 mb-8 border border-white/20">
-            <h2 className="text-xl font-semibold text-foreground mb-4">Contributors</h2>
-            <ContributorAvatars contributors={contributors} />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-              {contributors.map((contributor, index) => (
-                <div key={contributor} className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-2 flex items-center justify-center text-white font-bold text-lg">
-                    {contributor.charAt(0)}
-                  </div>
-                  <p className="text-sm font-medium text-foreground">{contributor}</p>
-                  <p className="text-xs text-muted-foreground">
-                    {"Developer"}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+          
 
           {/* Demo Area */}
           <div className="glass-dark rounded-xl p-8 border border-white/20">
@@ -113,7 +95,27 @@ const MusicPage = () => {
               </div>
             </div>
           </div>
+
+          {/* Contributors */}
+          <div className="glass-dark rounded-xl p-6 mt-8 mb-8 border border-white/20">
+            <h2 className="text-xl font-semibold text-foreground mb-4">Contributors</h2>
+            <ContributorAvatars contributors={contributors} />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+              {contributors.map((contributor, index) => (
+                <div key={contributor} className="text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full mx-auto mb-2 flex items-center justify-center text-white font-bold text-lg">
+                    {contributor.charAt(0)}
+                  </div>
+                  <p className="text-sm font-medium text-foreground">{contributor}</p>
+                  <p className="text-xs text-muted-foreground">
+                    {"Developer"}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
+
       </main>
     </div>
   );
