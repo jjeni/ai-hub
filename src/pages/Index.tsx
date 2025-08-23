@@ -49,22 +49,10 @@ const Index = () => {
       
       <main className="pt-20 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Hero Section */}
-          <div className="text-center mb-16">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-glow opacity-30 blur-3xl"></div>
-              <h1 className="relative text-6xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6">
-                AI Project Portal
-              </h1>
-            </div>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Explore our cutting-edge artificial intelligence projects. From music generation to code assistance, 
-              discover the future of AI technology.
-            </p>
-          </div>
+
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-8 mt-7">
             {projects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}
@@ -81,7 +69,7 @@ const Index = () => {
               <Link to="/hub">
                 <Button variant="hub" size="lg" className="px-8 py-3">
                   Go to AI Hub 🚀
-                </Button>
+                </Button> 
               </Link>
             </div>
           </div>

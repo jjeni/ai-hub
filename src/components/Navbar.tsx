@@ -22,8 +22,9 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors">
             <Sparkles className="h-8 w-8 text-primary animate-pulse" />
             <span className="font-bold text-xl bg-gradient-primary bg-clip-text text-transparent">
-              AI HUB
+              AI HUB 
             </span>
+            <span className="font-normal text-sm bg-gradient-secondary mt-1 bg-clip-text text-transparent">Connecting Ideas with Artificial Intelligence</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-1">
@@ -32,7 +33,7 @@ const Navbar = () => {
                 <Button
                   variant={location.pathname === item.path ? "gradient" : "ghost"}
                   size="sm"
-                  className="text-foreground hover:text-primary transition-all duration-300"
+                  className="text-foreground transition-all duration-300"
                 >
                   {item.label}
                 </Button>
