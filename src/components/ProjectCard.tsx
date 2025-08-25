@@ -12,8 +12,7 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ title, description, path, icon, contributors }: ProjectCardProps) => {
   return (
-    <div className="group relative glass-dark rounded-xl p-4 hover:shadow-glow transition-all duration-500 hover:scale-105 animate-float border border-white/20">
-      <div className="absolute inset-0 bg-gradient-glow opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl blur-xl"></div>
+    <div className="group relative glass-dark rounded-xl p-4  hover:shadow-glow transition-all duration-1050 hover:scale-105 animate-float border border-white/20">
       
       <div className="relative z-10">
         <div className="flex items-center justify-center w-16 h-16 bg-gradient-primary rounded-lg mb-4 animate-glow">
@@ -25,7 +24,7 @@ export const ProjectCard = ({ title, description, path, icon, contributors }: Pr
         
         <ContributorAvatars contributors={contributors} />
         
-        <Link to={path} className="block mt-4">
+        <Link to={path} className="block mt-4 ">
           <Button variant="gradient" className="w-full">
             View
           </Button>
