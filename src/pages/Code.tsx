@@ -27,7 +27,7 @@ const CodePage = () => {
 
           {/* Demo Area */}
           <div className="glass-dark rounded-xl p-8 border border-white/20">
-            <h2 className="text-2xl font-bold text-foreground mb-6">Code Generation Demo</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-6 text-center">AI Generated Code</h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
               {/* Input */}

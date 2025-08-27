@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ title, description, path, icon, contributors }: ProjectCardProps) => {
   return (
-    <div className="group relative glass-dark rounded-xl p-4  hover:shadow-glow transition-all duration-1050 hover:scale-105 animate-float border border-white/20">
+    <div className="group relative glass-dark rounded-xl p-4 hover:shadow-glow transition-all duration-1050 hover:scale-105 animate-float border border-white/20">
       
       <div className="relative z-10">
         <div className="flex items-center justify-center w-16 h-16 bg-gradient-primary rounded-lg mb-4 animate-glow">
