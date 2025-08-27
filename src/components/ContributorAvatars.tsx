@@ -15,7 +15,7 @@ export const ContributorAvatars = ({ contributors }: ContributorAvatarsProps) =>
     <div className="flex items-center space-x-2">
       <span className="text-xs text-muted-foreground">Contributors:</span>
       <div className="flex -space-x-2">
-        {contributors.slice(0, 4).map((contributor, index) => (
+        {contributors.slice(0, 3).map((contributor, index) => (
           <div
             key={contributor}
             className={`w-8 h-8 rounded-full border-2 border-background flex items-center justify-center text-white text-xs font-medium ${
@@ -26,9 +26,9 @@ export const ContributorAvatars = ({ contributors }: ContributorAvatarsProps) =>
             {contributor.charAt(0).toUpperCase()}
           </div>
         ))}
-        {contributors.length > 4 && (
+        {contributors.length > 3 && (
           <div className="w-8 h-8 rounded-full border-2 border-background bg-muted flex items-center justify-center text-muted-foreground text-xs font-medium">
-            +{contributors.length - 4}
+            +{contributors.length - 3}
           </div>
         )}
       </div>

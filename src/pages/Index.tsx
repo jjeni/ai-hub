@@ -62,13 +62,14 @@ const Index = () => {
           <div className="text-center">
             <div className="glass-dark rounded-2xl p-8 max-w-2xl mx-auto border border-white/20">
               <Sparkles className="w-12 h-12 text-primary mx-auto mb-4 animate-pulse" />
-              <h2 className="text-3xl font-bold text-foreground mb-4">Join the AI Community</h2>
+              <h1 className="text-5xl font-bold text-foreground mb-8">POWER HOUSE</h1>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Join the AI Community</h2>
               <p className="text-muted-foreground mb-6">
                 Connect with fellow AI enthusiasts, share ideas, tools, and learning updates in our community hub.
               </p>
-              <Link to="/hub">
+              <Link to="/">
                 <Button variant="hub" size="lg" className="px-8 py-3">
-                  Go to AI Hub 🚀
+                  Coming Soon..
                 </Button> 
               </Link>
             </div>

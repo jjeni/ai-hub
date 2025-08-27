@@ -2,6 +2,13 @@ import { Video, Play, Pause, SkipBack, SkipForward, Settings } from "lucide-reac
 import { Button } from "@/components/ui/button";
 import { ContributorAvatars } from "@/components/ContributorAvatars";
 import Navbar from "@/components/Navbar";
+import vid1 from "@/assets/videos/video (1).mp4";
+import vid2 from "@/assets/videos/video (2).mp4";
+import vid3 from "@/assets/videos/video (3).mp4";
+
+const videos = [{ src: vid1, prompt : "A", title : ""},
+                { src: vid2, prompt: "B", title : ""},
+                { src: vid3, prompt: "C", title : "" }]
 
 const VideoPage = () => {
   const contributors = ["Sanjay", "Esakkiraj", "Muthuselvam", "Balakrishnan", "Hariram", "Venkatesh", "Yokesh"];
@@ -29,69 +36,23 @@ const VideoPage = () => {
 
           {/* Demo Area */}
           <div className="glass-dark rounded-xl p-8 border border-white/20">
-            <h2 className="text-2xl font-bold text-foreground mb-6">AI Generated Video</h2>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {/* Video Player */}
-              <div>
-                <h3 className="text-lg font-semibold text-foreground mb-4"> Preview</h3>
-                <div className="relative bg-gradient-to-br from-purple-900/20 to-blue-900/20 rounded-lg aspect-video overflow-hidden border border-white/10 ">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mb-4 mx-auto animate-pulse">
-                        <Play className="w-8 h-8 text-white ml-1" />
-                      </div>
-                      <p className="text-foreground font-medium">AI Generated Video</p>
-                      <p className="text-sm text-muted-foreground">Click to play preview</p>
+            <h2 className="text-2xl font-bold text-foreground mb-6 text-center">AI Generated Video</h2>
+             <div className="mt-8">
+              <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-4">
+                {videos.map((video, index) => (
+                  <div key={index} className="group relative">
+                    <div className="aspect-auto p-2 bg-gradient-to-br from-purple-500/20 to-blue-500/20 rounded-lg border border-white/10 flex items-center justify-center hover:shadow-glow transition-all duration-300">
+                      <video className="w-full h-400px object-fill text-primary group-hover:scale-120 transition-transform" title={video.title} controls>
+                        <source src={video.src} type="video/mp4"/>
+                      </video>
                     </div>
+                    <p className="text-s text-muted-foreground mt-2 text-center">{video.title}</p>
                   </div>
-                  
-                  {/* Video Controls */}
-                  <div className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-sm p-4">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-3">
-                        <Button variant="ghost" size="sm" className="text-white hover:text-primary">
-                          <SkipBack className="w-4 h-4" />
-                        </Button>
-                        <Button variant="gradient" size="sm" className="rounded-full">
-                          <Play className="w-4 h-4" />
-                        </Button>
-                        <Button variant="ghost" size="sm" className="text-white hover:text-primary">
-                          <SkipForward className="w-4 h-4" />
-                        </Button>
-                      </div>
-                      <div className="flex-1 mx-4">
-                        <div className="bg-white/20 rounded-full h-1">
-                          <div className="bg-gradient-primary h-1 rounded-full w-1/3"></div>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-white text-sm">0:42 / 2:15</span>
-                        <Button variant="ghost" size="sm" className="text-white hover:text-primary">
-                          <Settings className="w-4 h-4" />
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 
-            {/* Features */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-              <div className="bg-gradient-primary/10 rounded-lg p-4">
-                <h4 className="font-semibold text-foreground mb-2">4K Quality</h4>
-                <p className="text-sm text-muted-foreground">Ultra-high definition output</p>
-              </div>
-              <div className="bg-gradient-secondary/10 rounded-lg p-4">
-                <h4 className="font-semibold text-foreground mb-2">Auto Subtitles</h4>
-                <p className="text-sm text-muted-foreground">AI-generated captions</p>
-              </div>
-              <div className="bg-gradient-accent/10 rounded-lg p-4">
-                <h4 className="font-semibold text-foreground mb-2">Multi-Format</h4>
-                <p className="text-sm text-muted-foreground">Export for any platform</p>
-              </div>
-            </div>
+            
           </div>
 
           {/* Contributors */}
